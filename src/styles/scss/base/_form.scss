@@ -1,0 +1,104 @@
+input[type="checkbox"].checkbox-lg {
+  width: 40px;
+  height: 40px;
+}
+
+input[type="text"] {
+    border: 1px solid $color-light-grey;
+    font-size: 1.25em;
+}
+
+input {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+input.untouched:required {
+    border: 1px solid red;
+}
+
+input.invalid {
+    border: 1px solid red;
+}
+
+input.valid {
+    border: 1px solid green;
+}
+
+textarea {
+    width: 100%;
+    min-height: 8em;
+    border: 1px solid $color-border;
+    resize: vertical;
+}
+textarea:read-only {
+    background-color: $color-read-only;
+}
+
+textarea.textarea-md {
+    min-height: 15em;
+}
+textarea.textarea-lg,
+textarea.textarea-tall {
+    min-height: 28em;
+}
+
+label.invalid {
+    position: absolute;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block !important;
+}
+
+label.label-box,
+.label-box {
+    height: 43px; /* same as twbs form-controls */
+    padding: 10px 18px; /* same as twbs form-controls */
+    background-color: $color-primary;
+    border: 1px solid $color-border;
+    color: $color-white;
+
+    .disclaimer {
+      color: $color-white;
+    }
+}
+
+.radio, .checkbox {
+    position: relative;
+     display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    height: 20px !important;
+    width: 20px !important;
+    margin-left: -20px !important;
+    margin-right: 15px !important;
+}
+
+.checkbox-component {
+    text-align: left;
+    font-size: 1.5em;
+
+    label {
+      display: flex;
+      align-items: center;
+
+      .header {
+        text-align: right;
+        padding: 10px;
+      }
+
+      span {
+        display: block;
+      }
+      span.disclaimer {
+        font-size: 0.5em;
+      }
+    }
+
+    &.box {
+      padding-bottom: 0;
+    }
+  }

@@ -1,0 +1,30 @@
+@import 'colors';
+@import 'theme-colors';
+
+.definition-list {
+  width: 100%;
+  .definition-list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0;
+    margin: 0px 0px;
+    font-size: 0.85em;
+    width: 100%;
+  }
+  .definition-list__title {
+    color: $color-dark-grey;
+    display: inline-block;
+    width: 50%;
+    margin-right: 1rem;
+    text-align: right;
+    font-weight: 600;
+  }
+  .definition-list__body {
+    color: $color-dark-grey;
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    margin-left: 1rem;
+  }
+}

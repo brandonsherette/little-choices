@@ -1,0 +1,50 @@
+$color-mask: rgba(0, 0, 0, 0.8);
+$color-shadow: #b9b9b9;
+$color-read-only: #ececec;
+$color-subtle-grey: #e8e8e8;
+$color-light-grey: #d8d8d8;
+$color-mid-grey: #999;
+$color-mid-dark-grey: #757575;
+$color-dark-grey: #3D3D3D;
+$color-pale-blue: #c6f8ff;
+$color-light-blue: #83C3CC;
+$color-primary-blue: #5596c8;
+$color-bootstrap-primary: #337ab7;
+$color-primary: $color-bootstrap-primary;
+$color-dark-blue: #31617E;
+$color-yellow: #FFAC00;
+$color-promo: #ef6c00;
+$color-pale-green: #57BF90;
+$color-white: #fff;
+$color-well-white: #f5f5f5;
+$color-well-grey: #f2f2f2;
+$color-sand: #f4f1e8;
+$color-faded-black: rgb(97, 97, 97);
+$color-input-label-primary: #1e90ff;
+$color-error: #d02424;
+$color-danger: $color-error;
+$color-btn-active: $color-bootstrap-primary;
+$color-btn-hover: $color-bootstrap-primary;
+/*$color-btn-hover-font: #60b6e0;*/
+$color-btn-hover-font: $color-white;
+$color-important: $color-promo;
+
+$color-success: #3c763d;
+$color-success-light: #77b15f;
+$color-info: #31708f;
+$color-info-light: #60b6e0;
+$color-warning-color: #8a6d3b;
+$color-warning-background: #fcf8e3;
+$color-warning-border: #faebcc;
+
+$color-border: $color-mid-grey;
+$color-border-light: $color-light-grey;
+
+$color-disclaimer: #337ab7;
+$color-active: #f3bd5b;
+$color-active-alt: #9A3334;
+$color-input-hover-bg: $color-bootstrap-primary;
+$color-input-hover-font: $color-white;
+$color-input-active-bg: #cdf5fb;
+$color-input-active-font: $color-dark-grey;
+$color-btn-active-border: $color-dark-grey;

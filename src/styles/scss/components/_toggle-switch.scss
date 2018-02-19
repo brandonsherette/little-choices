@@ -1,0 +1,198 @@
+/* Core Styles */
+.toggle-switch-component {
+  $border-radius: 5px;
+  $transition-length: 0.4s;
+
+  position: relative;
+  border: 1px solid $color-mid-grey;
+  border-radius: $border-radius;
+  background-color: $color-well-white;
+  /* make sure toggle slider background content is hidden */
+  overflow: hidden;
+  text-align: center;
+
+  input {
+    display: none;
+  }
+
+  .toggle-switch {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .toggle-image,
+  .toggle-slider,
+  .toggle-single-sided {
+    width: 100%;
+    position: relative;
+    -webkit-transition: $transition-length;
+    transition: $transition-length;
+  }
+
+  .toggle-image,
+  .toggle-slider {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .toggle-slider::before {
+    content: "";
+    background-color: $color-primary-blue;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* make sure background is behind the switch to allow text to be seen */
+    z-index: 99;
+    -webkit-transition: $transition-length;
+    transition: $transition-length;
+  }
+
+  /* checked animation */
+  input:checked + .toggle-single-sided {
+    transform: translateX(-1 * 80px);
+  }
+
+  .switch {
+    width: 50%;
+    border-radius: 0;
+    background-color: transparent;
+    position: relative;
+    /* make sure switch text is above slider background */
+    z-index: 100;
+  }
+
+  .toggle-slider .left-switch {
+    border-right: 1px solid $color-mid-grey;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  /* toggle-single-sided */
+  .toggle-single-sided {
+    $width: 80px;
+    $height: 20px;
+    $middleSwitchWidth: 20px;
+    text-align: left;
+    display: flex;
+
+    width: $width * 2 + $middleSwitchWidth;
+    background-color: $color-white;
+
+    .middle-switch {
+      background-color: $color-white;
+      min-width: $middleSwitchWidth;
+      width: $middleSwitchWidth;
+    }
+    .switch {
+      background-color: $color-primary-blue;
+      cursor: pointer;
+      width: $width - ($middleSwitchWidth / 2);
+      text-align: center;
+      transition: $transition-length;
+      -webkit-transition: $transition-length;
+    }
+  }
+
+  /* active state (selected) */
+  .left-switch,
+  input:checked + .toggle-slider .right-switch,
+  input:checked + .toggle-image .right-switch {
+    color: $color-white;
+    opacity: 1;
+    cursor: default;
+  }
+
+  /* inactive state (not selected) */
+  input:not(:checked) + .toggle-slider .right-switch,
+  input:not(:checked) + .toggle-image .right-switch,
+  input:checked + .toggle-slider .left-switch,
+  input:checked + .toggle-image .left-switch {
+    color: initial;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  input:not(:checked) + .toggle-slider .right-switch:hover,
+  input:not(:checked) + .toggle-image .right-switch:hover
+  input:checked + .toggle-slider .left-switch:hover,
+  input:checked + .toggle-image .left-switch:hover {
+    color: $color-white;
+    opacity: 1;
+  }
+
+  .toggle-single-sided .switch:hover,
+  input:not(:checked) + .toggle-slider .right-switch:hover,
+  input:checked + .toggle-slider .left-switch:hover {
+    background-color: $color-dark-blue;
+    opacity: 1;
+    color: $color-white;
+  }
+}
+
+/* Size Styles */
+.toggle-switch-component.sm {
+  $width: 80px;
+  $height: 20px;
+
+  width: $width;
+  min-width: $width;
+  height: $height;
+
+  font-size: 11px;
+  line-height: $height;
+
+  .switch {
+    padding: 0;
+  }
+
+  .toggle-switch {
+    width: $width;
+    min-width: $width;
+  }
+
+  .toggle-slider::before {
+    width: $width / 2;
+    height: $height;
+  }
+
+  /* background color transition */
+  input:checked + .toggle-slider::before {
+    -webkit-transform: translateX($width / 2);
+    -ms-transform: translateX($width / 2);
+    transform: translateX($width / 2);
+  }
+}
+
+.toggle-switch-component.md {
+  $width: 240px;
+  $height: 40px;
+
+  width: $width;
+  min-width: $width;
+  height: $height;
+
+  font-size: 14px;
+
+  .switch {
+    padding: 10px;
+  }
+
+  .toggle-switch {
+    width: $width;
+    min-width: $width;
+  }
+
+  .toggle-slider::before {
+    width: $width / 2;
+    height: $height;
+  }
+
+  /* background color transition */
+  input:checked + .toggle-slider::before {
+    -webkit-transform: translateX($width / 2);
+    -ms-transform: translateX($width / 2);
+    transform: translateX($width / 2);
+  }
+}

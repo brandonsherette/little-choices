@@ -1,0 +1,70 @@
+.disclaimer {
+    font-size: 0.7em;
+}
+.disclaimer.disclaimer-danger {
+  color: $color-error;
+}
+
+.important {
+    color: $color-important;
+}
+
+.disclaimer-md {
+    font-size: 0.85em;
+    text-align: left;
+    font-weight: 700;
+}
+
+.no-text-deco {
+    text-transform: initial !important;
+}
+
+.font-warning {
+  color: $color-yellow;
+}
+.font-passive {
+    color: $color-mid-grey;
+}
+.font-primary {
+    color: $color-bootstrap-primary;
+    font-weight: 600;
+}
+
+.error,
+.font-error {
+    color: $color-error;
+}
+
+.font-promo {
+  color:$color-promo;
+  font-size:1.15em;
+}
+
+.font-success {
+  color: $color-success !important;
+}
+
+.font-info {
+  color: $color-info !important;
+}
+
+.highlight {
+    font-weight: 900;
+    color: $color-light-blue;
+}
+
+.title {
+  font-weight: 600;
+}
+.title-primary {
+    color: $color-bootstrap-primary;
+}
+.title-danger {
+    color: red !important;
+}
+.title-primary-light {
+    color: #c6f8ff;
+}
+.title-warning {
+    color: $color-yellow !important;
+}

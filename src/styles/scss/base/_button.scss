@@ -1,0 +1,99 @@
+button.btn:focus,
+button.btn:active:focus {
+    outline: 0;
+}
+
+[role="button"]:hover {
+  background-color: $color-bootstrap-primary;
+  color: $color-white;
+}
+
+.btn-xlg {
+    padding: 10px 36px;
+    font-size: 1.65em;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.btn-default {
+  background-color: $color-light-grey;
+  color: $color-dark-grey;
+}
+.btn-default:hover {
+  background-color: $color-mid-grey;
+  color: $color-dark-grey;
+}
+
+.btn-default.active {
+    background-color: $color-bootstrap-primary;
+}
+
+.btn-default:not([disabled]):hover {
+    color: $color-white;
+    background-color: $color-dark-blue;
+}
+
+.btn-primary.active,
+.btn-primary.active:focus {
+  background-color: $color-white !important;
+  color: $color-dark-grey !important;
+}
+
+.btn:disabled {
+    opacity: 0.35;
+}
+
+/* btn submenu start */
+.btn-submenu {
+  overflow: hidden;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.btn-submenu > .header {
+  line-height: 50px;
+  transition: margin 0.4s;
+}
+
+.btn-submenu .body .title {
+  font-size: 0.65em;
+  border-bottom: 1px solid #fff;
+  height: 30%;
+}
+
+.btn-submenu .body .content {
+  height: 70%;
+}
+.btn-submenu .body .content.full {
+    height: 100%;
+}
+.btn-submenu .body .content button {
+  height: 100%;
+  border-radius: 0;
+}
+.btn-submenu .btn-list .body button.active,
+.btn-submenu .btn-list .body button.active:focus {
+  background-color: #738E29;
+  color: white;
+}
+.btn-submenu .body button:first-child {
+  border-radius: 0 0 0 4px;
+}
+.btn-submenu .body button:last-child {
+  border-radius: 0 0 4px 0;
+  border-right: 0;
+}
+.btn-submenu .body,
+.btn-submenu .body button fa {
+  font-size: 18px;
+}
+.btn-submenu > * {
+  height: 50px;
+  display: block;
+}
+.btn-submenu:hover > *:first-child {
+  margin-top: -50px;
+}
+/* btn submenu end */

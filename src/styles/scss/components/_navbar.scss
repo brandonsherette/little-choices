@@ -1,0 +1,36 @@
+@media (min-width: 320px) {
+  .navbar-spread {
+    display: block;
+    ul.navbar-nav {
+      margin: 0;
+      justify-content: initial;
+    }
+  }
+
+  /* cart icon extension */
+  .app-navbar .navbar-spread .cart-icon-wrapper {
+    position: absolute;
+  }
+}
+
+@media (min-width: 922px) {
+  .navbar-spread {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    & > * {
+      justify-content: space-around;
+    }
+    ul.navbar-nav {
+      margin: 0 5rem;
+      width: 100%;
+      justify-content: space-between;
+      font-size: 1rem;
+    }
+  }
+
+  /* cart icon extension */
+  .app-navbar .navbar-spread .cart-icon-wrapper {
+    position: relative;
+  }
+}

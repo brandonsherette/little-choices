@@ -1,0 +1,26 @@
+@media (min-width: 320px) {
+  .app-footer {
+    text-align: center;
+    color:#fdfdfd;  
+    background-color:#585858;
+    font-size:.75rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      li {
+        flex: 0 0 auto;
+        margin-right: 1em;
+      }
+      li:last-child P{
+        margin-right: 0;
+      }
+    }
+    a {
+      color:#fdfdfd;
+    }
+  }
+}

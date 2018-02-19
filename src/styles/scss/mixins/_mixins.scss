@@ -1,0 +1,18 @@
+@mixin exactHeight($height) {
+  min-height: $height;
+  height: $height;
+  max-height: $height;
+  overflow: hidden;
+}
+@mixin flex {
+  display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+@mixin borderRadius($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}

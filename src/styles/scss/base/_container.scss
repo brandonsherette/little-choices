@@ -1,0 +1,39 @@
+.circle {
+    border-radius: 100%;
+    border: 1px solid $color-border;
+    padding: 5px;
+    width: 1em;
+    height: 1em;
+    font-size: 0.85em;
+}
+.circle-light {
+    background-color: $color-white;
+    color: $color-dark-grey;
+}
+
+.box-border {
+    background-color: $color-white;
+    border: 1px solid $color-border;
+    color: $color-dark-grey;
+}
+
+.box-container {
+  padding: 10px;
+  background-color: $color-well-white;
+  border: 1px solid $color-border;
+  color: $color-dark-grey;
+  margin-bottom: 20px;
+}
+
+.box-container.opacity {
+    background-color: rgba(199,199,199,0.20);
+    color: $color-white;
+}
+.disabled {
+    opacity: 0.35;
+}
+.round-container {
+    border: 1px solid $color-border;
+    border-radius: 10px;
+    overflow: hidden;
+}

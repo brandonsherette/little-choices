@@ -1,0 +1,240 @@
+.block {
+    display: block;
+}
+
+.break-sm {
+  margin-top: 5px;
+}
+
+.break {
+    margin-top: 10px;
+}
+
+.break-2x {
+    margin-top: 20px;
+}
+.break-3x {
+    margin-top: 30px;
+}
+.break-4x {
+    margin-top: 40px;
+}
+.break-10x {
+    margin-top: 100px;
+}
+
+.border-none {
+    border: 0 !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.row.no-float {
+    display: table;
+
+    & > div {
+        display: table-cell;
+        float: none;
+    }
+}
+
+.position-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.position-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* spacing */
+.pt-10 {
+    padding-top: 10px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.w-25 {
+    width: 25% !important;
+    min-width: 25% !important;
+}
+.w-65 {
+    width: 65% !important;
+    min-width: 65% !important;
+}
+/* end spacing */
+
+/* dividers */
+.divider:before,
+.divider:after {
+    content: "";
+}
+
+.divider {
+    height: 1px;
+    border-bottom: 1px solid $color-light-grey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.horz-divider {
+    position: relative;
+}
+
+.horz-divider.full::before {
+    content: "";
+    background-color: #ddd;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.horz-divider::before {
+    content: "";
+    background-color: $color-border;
+    height: 75%;
+    width: 1px;
+    position: absolute;
+    top: 13.5%;
+    left: 0;
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: $color-border;
+    height: 100%;
+    position: absolute;
+}
+.vertical-line:before,
+.vertical-line:after {
+    content: "";
+}
+/* dividers end */
+
+.col-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+    
+  .col-left, 
+  .col-right{
+    flex-basis: 49%; /* make it so there is only a small gap between the column box */
+  }
+
+  .col-right {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.col-center {
+    text-align: center;
+}
+.col-center > div {
+    display: inline-block;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+    display: block;
+    min-height: 100%;
+}
+.full-height {
+    min-height: 100%;
+    height: 100%;
+}
+.half-width {
+    width: 50% !important;
+}
+.w-75 {
+    width: 75%;
+}
+.full-width {
+    width: 100% !important;
+}
+.side-padding-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.side-padding {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.side-spacing-small {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.side-spacing {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.no-margin {
+    margin: 0;
+}
+.no-side-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.no-side-margin {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.flex-top {
+  display: flex !important;
+  -ms-flex-align: initial;
+  -webkit-align-items: initial;
+  -webkit-box-align: initial;
+  align-items: initial;
+  justify-content: center;
+}
+
+.flex {
+  display: flex !important;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.underline {
+  border-bottom: 3px solid #5596c8;
+  width: 90%;
+  margin-left: 5%;
+}

@@ -1,0 +1,102 @@
+.page-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: $color-dark-grey;
+  z-index: 2000;
+  visibility: visible;
+  opacity: 1;
+
+  .before-content-background,
+  .content-background,
+  .content {
+    font-size: 32px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .content {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .before-content-background,
+  .content-background {
+    min-width: 60%;
+    min-height: 60%;
+  }
+
+  .content-background {
+    background-color: $color-dark-blue;
+    border: 2px solid $color-light-grey;
+    border-radius: 7px;
+    padding: 20px;
+  }
+
+  .logo {
+    margin-bottom: 2em;
+  }
+}
+
+  /* media queries */
+@media screen and (max-width: 1200px) {
+  .page-overlay {
+    .content {
+      font-size: 24px;
+    }
+
+    .content-background {
+      min-width: 90%;
+      min-height: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .page-overlay {
+    .content {
+      font-size: 16px;
+    }
+  }
+}
+
+/* animations */
+.page-overlay.static {
+  opacity: 1;
+  visibility: visible;
+}
+
+.page-overlay.hide {
+  display: block !important;
+  animation: 1s fadeOut;
+  animation-fill-mode: forwards;
+}
+
+.page-overlay.show {
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
