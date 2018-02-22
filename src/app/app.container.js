@@ -23,7 +23,7 @@ class App extends Component {
     // setup page padding based on header height
     var navbarHeight = $('.app-navbar').outerHeight();
     $('.page').css({ 'margin-top': navbarHeight });
-    $('.site-top').css({ "min-height": $('body').outerHeight() - $('.footer-base').outerHeight() });
+    $('.app-top').css({ "min-height": $('body').outerHeight() - $('.app-footer').outerHeight() });
   }
 
   render() {

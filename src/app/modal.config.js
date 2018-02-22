@@ -1,6 +1,9 @@
-import { ModalUtil } from 'redux-modal-viewer';
+import { ModalConfirm, ModalUtil } from 'redux-modal-viewer';
+import { ModalChoiceListForm } from './choice/';
 //#YO:IMPORT:MODAL
 
 export default ModalUtil.combineModals({
-  //#YO:ADD:MODAL
+	ModalChoiceListForm,
+	ModalConfirm,
+	//#YO:ADD:MODAL
 });

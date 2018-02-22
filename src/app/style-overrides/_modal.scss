@@ -1,0 +1,10 @@
+@media (min-width: 320px) {
+  .modal {
+    .modal-header.modal-header-warning {
+      display: block;
+    }
+    .modal-confirm__footer {
+      width: 100%;
+    }
+  }
+}

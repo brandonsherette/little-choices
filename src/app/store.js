@@ -8,14 +8,15 @@ import {
   composeEnhancers, 
   modalNoScroll,
 } from './middleware/';
+import { choiceMiddleware } from './choice/';
 
 const history = HistoryUtil.getHistory();
 // #LIVE
-const middleware = applyMiddleware(thunk, routerMiddleware(history), modalNoScroll, appRouter);
+const middleware = applyMiddleware(thunk, routerMiddleware(history), modalNoScroll, appRouter, choiceMiddleware);
 export default createStore(reducer, middleware);
 
 /*const enhancer = composeEnhancers(
-  applyMiddleware(thunk, routerMiddleware(history), modalNoScroll, appRouter),
+  applyMiddleware(thunk, routerMiddleware(history), modalNoScroll, appRouter, choiceMiddleware),
   // other store enhancers if any
 );
 export default createStore(reducer, enhancer);*/

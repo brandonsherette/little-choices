@@ -1,10 +1,5 @@
 # Little Choices
 
-# Latest Version
-## v0.1.0
-### Features
-- Intial Build.
-
 ## Install
 To install all core dependecies, use the install command.
 ```npm install```

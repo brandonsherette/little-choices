@@ -1,9 +1,9 @@
 import React from 'react';
+import { Choice } from'../choice';
 
 const Home = ({ }) => (
   <section className="page-home">
-    <h1>Home</h1>
-    <p>Welcome to the home page of the application.</p>
+    <Choice />
   </section>
 );
 

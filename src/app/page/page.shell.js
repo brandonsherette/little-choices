@@ -6,7 +6,7 @@ require('./page.shell.scss');
 const PageShell = Page => {
   return (props) => (
     <ReactCSSTransitionGroup
-      className="full page container"
+      className="full page"
       transitionName="fade"
       transitionAppear={true}
       transitionAppearTimeout={800}

@@ -11,3 +11,20 @@ body {
 .app-top {
   padding-bottom: 2rem;
 }
+.ele-group {
+  display: flex;
+  align-items: center;
+
+  & > * {
+    flex: 0 0 auto;
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+  & > *:last-child {
+    margin-right: 0;
+  }
+}
+button, *[role=button] {
+  cursor: pointer;
+}

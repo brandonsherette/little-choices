@@ -1,0 +1,14 @@
+@media (min-width: 320px) {
+  .choice-details {
+    .choice-options {
+      width: 100%;
+    }
+    .choice-option.passing {
+      background-color: #cdcdcd;
+    }
+    .choice-option.active {
+      background-color: #428bca;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@media (min-width: 320px) {
+  .choice-list {
+    .card-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      .choice-item {
+        margin-bottom: 1em;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+      }
+    }
+  }
+}
