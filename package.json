@@ -8,9 +8,7 @@
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.5",
     "history": "^4.6.1",
-    "orthotic-template-util": "git+https://github.com/SourceMonkeys/orthotic-template-util.git",
     "prop-types": "^15.5.10",
-    "pubsub-js": "^1.5.4",
     "rc-slider": "^6.3.1",
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.6.2",
@@ -33,7 +31,6 @@
     "redux-modal-viewer": "git+https://github.com/brandonsherette/redux-modal-viewer.git",
     "redux-promise-middleware": "^4.2.0",
     "redux-thunk": "^2.1.0",
-    "shopify-buy": "^0.7.1",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
